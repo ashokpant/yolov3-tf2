@@ -25,10 +25,6 @@ from .utils import broadcast_iou
 yolo_max_boxes=100 #'maximum number of boxes per image'
 yolo_iou_threshold= 0.5 #'iou threshold'
 yolo_score_threshold=0.5 #'score threshold')
-max_output_size_per_class=yolo_max_boxes,
-        max_total_size=yolo_max_boxes,
-        iou_threshold=yolo_iou_threshold,
-        score_threshold=yolo_score_threshold
 yolo_anchors = np.array([(10, 13), (16, 30), (33, 23), (30, 61), (62, 45),
                          (59, 119), (116, 90), (156, 198), (373, 326)],
                         np.float32) / 416
